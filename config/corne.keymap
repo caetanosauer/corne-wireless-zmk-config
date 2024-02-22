@@ -13,27 +13,21 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R           &kp T    &kp Y        &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&kp ESC    &kp A  &kp S  &kp D     &kp F           &kp G    &kp H        &kp J      &kp K      &kp L    &kp SEMI  &kp RET
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V           &kp B    &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                         &kp LGUI  &kp LEFT_SHIFT  &mo 2    &lt 1 SPACE  &kp LCTRL  &kp RALT
+&kp TAB                  &kp Q  &kp W  &kp E     &kp R           &kp T    &kp Y        &kp U      &kp I      &kp O    &kp P     &kp BSPC
+&kp ESC                  &kp A  &kp S  &kp D     &kp F           &kp G    &kp H        &kp J      &kp K      &kp L    &kp SEMI  &kp RET
+&mt LC(LS(LA(LGUI))) LS  &kp Z  &kp X  &kp C     &kp V           &kp B    &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mt RC(RS(RALT)) RS
+&kp LGUI  &kp LEFT_SHIFT  &mo 2    &lt 1 SPACE  &kp LCTRL  &kp RALT
             >;
         };
 
         lower_layer {
             display-name = "L1";
             bindings = <
-&kp TAB    &kp UNDER  &kp LBRC  &kp RBRC  &kp PIPE  &kp PLUS    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-&kp ESC    &kp MINUS  &kp LPAR  &kp RPAR  &kp BSLH  &kp EQUAL   &kp LEFT   &kp DOWN   &kp UP           &kp RIGHT &kp BKSP  &trans
-&kp LSHFT  &kp GRAVE  &kp LBKT  &kp RBKT  &kp TILDE &trans      &kp SQT    &kp DQT    &trans           &trans    &trans    &trans
+&kp TAB    &kp UNDER  &kp LBRC  &kp RBRC  &kp PIPE  &kp PLUS    &kp LG(LEFT)  &kp PG_DN  &kp PG_UP  &kp LG(RIGHT)  &kp RPAR  &trans
+&kp ESC    &kp MINUS  &kp LPAR  &kp RPAR  &kp BSLH  &kp EQUAL   &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp BKSP  &trans
+&kp LSHFT  &kp GRAVE  &kp LBKT  &kp RBKT  &kp TILDE &trans      &kp SQT       &kp DQT    &trans     &trans         &trans    &trans
                                 &trans    &trans    &trans      &trans    &trans     &trans
             >;
         };
