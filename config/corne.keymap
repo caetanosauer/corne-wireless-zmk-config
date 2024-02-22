@@ -25,9 +25,9 @@
         lower_layer {
             display-name = "L1";
             bindings = <
-&kp TAB    &kp UNDER  &kp LBRC  &kp RBRC  &kp PIPE  &kp PLUS    &kp LG(LEFT)  &kp PG_DN  &kp PG_UP  &kp LG(RIGHT)  &kp RPAR  &trans
-&kp ESC    &kp MINUS  &kp LPAR  &kp RPAR  &kp BSLH  &kp EQUAL   &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp BKSP  &trans
-&kp LSHFT  &kp GRAVE  &kp LBKT  &kp RBKT  &kp TILDE &trans      &kp SQT       &kp DQT    &trans     &trans         &trans    &trans
+&kp LG(GRAVE)  &kp UNDER  &kp LBRC  &kp RBRC  &kp PIPE  &kp PLUS    &kp LG(LEFT)  &kp PG_DN  &kp PG_UP  &kp LG(RIGHT)  &kp RPAR  &trans
+&kp trans      &kp MINUS  &kp LPAR  &kp RPAR  &kp BSLH  &kp EQUAL   &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp BKSP  &trans
+&kp trans      &kp GRAVE  &kp LBKT  &kp RBKT  &kp TILDE &trans      &kp SQT       &kp DQT    &trans     &trans         &trans    &trans
                                 &trans    &trans    &trans      &trans    &trans     &trans
             >;
         };
