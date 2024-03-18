@@ -64,7 +64,9 @@
                 // Thumb row
                 &kp LGUI
                 &mo 2
-                &kp LEFT_SHIFT
+                // Experimenting with space and shift on left thumb
+                &mt LSHIFT SPACE
+                // &kp LEFT_SHIFT
 
                 &lt 1 SPACE
                 &kp LCTRL
