@@ -64,11 +64,12 @@
                 // Thumb row
                 &kp LGUI
                 &mo 2
-                // Experimenting with space and shift on left thumb
-                &mt LSHIFT SPACE
-                // &kp LEFT_SHIFT
+                // Experimenting with space and shift on right thumb and layer 1 on left
+                &mo 1
+                // &kp LSHIFT
 
-                &lt 1 SPACE
+                &mt RSHIFT SPACE
+                // &lt 1 SPACE
                 &kp LCTRL
                 &kp RALT
             >;
